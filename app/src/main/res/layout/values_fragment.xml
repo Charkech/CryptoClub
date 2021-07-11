@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Last Updated in "
+        android:fontFamily="@font/coda"
+        android:layout_marginStart="15dp"
+        android:textSize="20sp"
+        android:paddingTop="15dp"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:paddingTop="17dp"
+        android:fontFamily="@font/coda"
+        android:textSize="16sp"
+        android:id="@+id/time_tv"
+
+        android:layout_marginStart="180dp"
+        tools:ignore="MissingConstraints" />
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="50dp"
+        android:id="@+id/recycler_values"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="43dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/favourite_coins_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        app:borderWidth="0.5dp"
+        app:elevation="6dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_baseline_star_24"
+        app:backgroundTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"
+        android:contentDescription="TODO" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

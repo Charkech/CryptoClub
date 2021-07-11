@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MsgActivity">
+
+    <LinearLayout
+        android:layout_width="403dp"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="2dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="2dp"
+            app:cardCornerRadius="15dp"
+            app:cardPreventCornerOverlap="false"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/iv_msg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_baseline_people_24"
+                android:clickable="true"
+                android:scaleType="fitCenter" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/username_msg_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="15dp"
+            android:layout_marginStart="2dp"
+            android:text="Username"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:drawableStartCompat="@drawable/ic_baseline_keyboard_arrow_left_24" />
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="3dp"
+        android:id="@+id/rv_msgs"
+       />
+
+
+    <ImageButton
+        android:id="@+id/send_ib"
+        android:layout_width="50dp"
+
+        android:layout_height="50dp"
+        android:background="@drawable/send_back"
+        android:src="@drawable/ic_baseline_send_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/msg_et"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Message"
+        android:textColor="@color/black"
+        android:textColorHint="#8FBC8F"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/send_ib"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/camBtn_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:padding="10dp"
+        android:src="@drawable/ic_baseline_camera_alt_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/msg_et"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:padding="10dp"
+        android:id="@+id/micBtn"
+        android:src="@drawable/ic_baseline_mic_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/camBtn_msg"
+        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

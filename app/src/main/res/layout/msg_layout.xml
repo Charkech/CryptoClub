@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+
+    <TextView
+        android:id="@+id/reciver_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/sender_back"
+        android:paddingStart="25dp"
+        android:paddingTop="8dp"
+        android:fontFamily="@font/coda"
+        android:paddingBottom="8dp"
+        android:paddingRight="8dp"
+        android:text="reciver msg"
+
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sender msg"
+        android:id="@+id/sender_tv"
+        android:textColor="@color/black"
+        android:layout_margin="5dp"
+        android:fontFamily="@font/coda"
+        android:background="@drawable/reciver_back"
+        android:textSize="15sp"
+        android:padding="8dp"
+        android:layout_gravity="right"
+        tools:ignore="RtlSymmetry"
+
+        />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:id="@+id/iv_sender"
+        android:layout_gravity="right"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:id="@+id/iv_receiver"
+        android:visibility="gone"
+        android:paddingEnd="20dp"
+        />
+
+
+
+</LinearLayout>

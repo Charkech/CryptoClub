@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".PrivacyActivity">
+
+    <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_marginBottom="100dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account Status"
+            android:textColor="@color/red"
+            android:textSize="30sp"
+            android:layout_gravity="center_vertical"
+            android:padding="5dp"
+            android:drawableStart="@drawable/ic_baseline_keyboard_arrow_left_24"
+            android:paddingStart="5dp"
+            android:drawablePadding="5dp"
+
+            >
+
+
+        </TextView>
+
+
+    </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Account Privacy"
+        android:textSize="25sp"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="40dp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Public"
+        android:textSize="18sp"
+        android:padding="5dp"
+        android:id="@+id/tv_status"
+        android:textColor="@color/darkGray"
+        android:layout_marginStart="50dp"
+        />
+    
+
+        
+        <Spinner
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:backgroundTint="@color/red"
+            android:layout_marginTop="100dp"
+
+            android:layout_gravity="center"/>
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textSize="15sp"
+        android:id="@+id/privacyBtn"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white">
+
+    </Button>
+
+
+</LinearLayout>

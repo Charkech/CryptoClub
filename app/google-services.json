@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "787024625306",
+    "project_id": "cryptoclub-baa22",
+    "storage_bucket": "cryptoclub-baa22.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:787024625306:android:c62aaba0600dcfab0be923",
+        "android_client_info": {
+          "package_name": "com.example.cryptoclub1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "787024625306-hsog60n1ajgj67t872e1e03m5ek1v0af.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cryptoclub1",
+            "certificate_hash": "aa3f540fd1a11252f53b2ad7c8a5aa92428b9270"
+          }
+        },
+        {
+          "client_id": "787024625306-pr90i1h4k4s73h23pmkaiju4kr98tl5r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD25NNR1eo7QxldDzdnfGb2w4P5ilrhGnI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "787024625306-pr90i1h4k4s73h23pmkaiju4kr98tl5r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
